@@ -44,3 +44,26 @@ Section
 #demo {
   color: blue;
 }
+
+/*
+List
+*/
+.list {
+  margin-left: auto;
+  margin-right: auto;
+  padding:20px;
+  list-style-type: none;
+  width: auto;
+  text-align: center;
+}
+
+.list li {
+  display: inline-block;
+  padding: 20px;
+  background: lightgray;
+  opacity: 70%;
+}
+
+.list li a {
+  text-decoration: none;
+}
