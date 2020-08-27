@@ -14,15 +14,28 @@ document.body.style.background = '#ffffff';
 You can use a combination of CSS style selectors and relationship properties to target the nodes you want. e.g. class, id, element.
 */
 
+/*
+SELECTOR METHODS 
+*/
+
 //Query Selectors - The querySelector can be used to find not just id's and class's but any selector.
 
-document.querySelector('.list li a').style.color = 'black';
+//document.querySelector('.list li a').style.color = 'black'; 
+
+const firstLi = document.querySelector('.list li a'); //We can store a query in a variable.
+firstLi.style.color = 'black'; //and change the propeties of the element.
+const secondLi = document.querySelector('list li a')
+//secondLi.setAttribute('style', 'color: white; background: black');
 
 
+//getElementBy 
 
-
-
-
+/*JavaScript HTML DOM document - The HTML DOM document object is the owner of all other objects in your web page.
+Finding HTML elements - Method
+document.getElementsById(id) - Finds an element by element ID
+document.getElementsByTagName(tag name) - Finds elements by tag name
+document.getElementsByClassName(class name) -Finds elements by class name
+*/
 
 //The getElementById Method - The most common way to access an HTML element is to use the id of an element.
 
@@ -30,12 +43,6 @@ document.querySelector('.list li a').style.color = 'black';
 
 document.getElementById('demo').innerHTML = "";//We use getElementById to select the element by its id and we use innerHTML to set the value of the element.
 
-/*JavaScript HTML DOM document - The HTML DOM document object is the owner of all other objects in your web page.
-Finding HTML elements - Method
-document.getElementById(id) - Finds an element by element ID
-document.getElementByTagName(tag name) - Finds elements by tag name
-document.getElementByClassName(class name) -Finds elements by class name
-*/
 
 /*Changing HTML elements - propeties
 element.innerHTML = new HTML content - Change the inner HTML of an element
