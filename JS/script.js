@@ -2,30 +2,29 @@
 */
 document.body.style.background = '#ffffff';
 
-/*When your HTML is parsed by a web broswer it is converted to the DOM as was mentioned above. */
+//When your HTML is parsed by a web broswer it is converted to the DOM.
 
-/*DOM Nodes - Everything in an HTML document is a node - nodes are objects that have many properties and methods attached to them. These properties and methods are the primary tools we use to to manipulate our webpage with JavaScript.: 
+/*DOM Nodes - Everything in an HTML document is a node - nodes are objects that have many properties and methods attached to them. These properties and methods are the primary tools we use to manipulate our webpage with JavaScript.: 
 *The entire document is a document node 
 *Every HTML element is an element node 
 *The text inside HTML elements are text nodes
 *Every HTML attribute is an attribute node(deprecated)
 *All comments are comment nodes
 
-You can use a combination of CSS style selectors and relationship properties to target the nodes you want. e.g. class, id, element.
+You can use a combination of CSS style selectors and relationship properties to target the nodes you want. e.g. class, id, element and relationship to other element e.g. parent, sibling child.
 */
 
 /*
 SELECTOR METHODS 
 */
 
-//Query Selectors - The querySelector can be used to find not just id's and class's but any selector.
+//Query Selectors - The querySelector can be used to select not just id's and class's but any CSS selector. Query selector returns the first match of selector.  
 
 //document.querySelector('.list li a').style.color = 'black'; 
 
 const firstLi = document.querySelector('.list li a'); //We can store a query in a variable.
 firstLi.style.color = 'black'; //and change the propeties of the element.
-const secondLi = document.querySelector('list li a')
-//secondLi.setAttribute('style', 'color: white; background: black');
+
 
 
 //getElementBy 
@@ -37,7 +36,7 @@ document.getElementsByTagName(tag name) - Finds elements by tag name
 document.getElementsByClassName(class name) -Finds elements by class name
 */
 
-//The getElementById Method - The most common way to access an HTML element is to use the id of an element.
+//The getElementsById Method - The most common way to access an HTML element is to use the id of an element.
 
 //The innerHTML property - The easiest way to get the content of an element is by using the innerHTML property.
 
